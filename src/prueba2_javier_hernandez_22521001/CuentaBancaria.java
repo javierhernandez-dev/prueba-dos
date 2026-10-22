@@ -38,7 +38,7 @@ public class CuentaBancaria {
     }
     
     
-    public void retirar(double monto){
+    public boolean retirar(double monto){
       if (monto <= 0) {
             throw new IllegalArgumentException("El monto a retirar debe ser mayor a cero.");
         }
